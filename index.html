@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      
+        <img id="MCFtext" src="Objects/MCfilter.png">
+
+        <div id="outerBorder">
+            <div id="outerGray">
+                <img id="AddInventory" src="Objects/addInventory.png" onclick="iconDrag('Add')">
+            </div>
+            
+            <div id="outerGrayMid"></div> 
+            <div id="innerBorderDown">
+
+            <div id="main_shadows">
+                <div id="shadow1"></div>
+                <div id="shadow2"></div>
+                <div id="shadow3"></div>
+            </div>
+
+            </div>
+        </div>
+
+        <div id="IMAGE_BOX">
+            <div id="dropBox">
+                <label for="fileInput" id="txtDB"> Drop Image Here or Click to Select</label>
+                <input type="file" id="fileInput" accept="image/*">
+                <img id="preview"/>
+            </div>
+
+             <div id="textBox" style="display: none;">
+                <input id="text" type="text" placeholder="add text here">
+                <span id="widthMirror"></span>
+            </div>
+
+            <div id="Add" style="display: none;">
+                <img src="Objects/Inventory.webp" style="width: 150px;">
+            </div> 
+
+            <div id="dirtsIcon" style="display: none;">
+                <img src="Objects/Shadow/sDirts.png" style="width: 35px;">
+            </div>      
+            
+             <div id="silverSwordIcon" style="display: none;">
+                <img src="Objects/Shadow/sSilverSwoed.png" style="width: 55px;">
+            </div> 
+
+            <div id="appleIcon" style="display: none;">
+                <img src="Objects/Loots/Apple.png" style="width: 35px;">
+            </div> 
+
+            <div id="torchIcon" style="display: none;">
+                <img src="Objects/Shadow/sTorch.png" style="width: 45px;">
+            </div> 
+
+            <div id="dia2Icon" style="display: none;">
+                <img src="Objects/Shadow/sDia2.png" style="width: 35px;">
+            </div> 
+
+            <div id="goldAppleIcon" style="display: none;">
+                <img src="Objects/Shadow/sGoldApple.png" style="width: 35px;">
+            </div> 
+
+            <div id="clownIcon" style="display: none;">
+                <img src="Objects/Shadow/sCLownFish.png" style="width: 35px;">
+            </div> 
+
+            <div id="armourIcon" style="display: none;">
+                <img src="Objects/Shadow/sArmour.png" style="width: 35px;">
+            </div> 
+
+            <div id="compassIcon" style="display: none;">
+                <img src="Objects/Shadow/sCompass.png" style="width: 30px;">
+            </div> 
+
+            <div id="emeraldIcon" style="display: none;">
+                <img src="Objects/Shadow/sEmerald.png" style="width: 25px;">
+            </div> 
+
+            <div id="enchBookIcon" style="display: none;">
+                <img src="Objects/Shadow/sEnchBook.png" style="width: 35px;">
+            </div> 
+
+            <div id="potionIcon" style="display: none;">
+                <img src="Objects/Shadow/sPotion.png" style="width: 35px;">
+            </div> 
+
+            <div id="purIcon" style="display: none;">
+                <img src="Objects/Shadow/sPupBlock.png" style="width: 35px;">
+            </div> 
+
+            <div id="swordIcon" style="display: none;">
+                <img src="Objects/Shadow/sSword.png" style="width: 40px;">
+            </div> 
+
+            <div id="TNTIcon" style="display: none;">
+                <img src="Objects/Shadow/sTNT.png" style="width: 40px;">
+            </div> 
+
+            <div id="wheatIcon" style="display: none;">
+                <img src="Objects/Shadow/sWheat.png" style="width: 35px;">
+            </div> 
+
+            <div id="boneIcon" style="display: none;">
+                <img src="Objects/Shadow/sBone.png" style="width: 35px;">
+            </div> 
+
+            <div id="bookIcon" style="display: none;">
+                <img src="Objects/Shadow/sBook.png" style="width: 35px;">
+            </div> 
+
+            <div id="breadIcon" style="display: none;">
+                <img src="Objects/Shadow/sBread.png" style="width: 40px;">
+            </div> 
+            
+            <div id="brickIcon" style="display: none;">
+                <img src="Objects/Shadow/sBricks.png" style="width: 40px;">
+            </div> 
+
+            <div id="carrotIcon" style="display: none;">
+                <img src="Objects/Shadow/sCarrot.png" style="width: 30px;">
+            </div> 
+
+            <div id="chickenIcon" style="display: none;">
+                <img src="Objects/Shadow/sChick.png" style="width: 40px;">
+            </div> 
+
+            <div id="wolfIcon" style="display: none;">
+                <img src="Objects/Shadow/sWolf.png" style="width: 75px;">
+            </div> 
+
+            <div id="codIcon" style="display: none;">
+                <img src="Objects/Loots/Cod.png" style="width: 40px;">
+            </div> 
+
+            <div id="melonIcon" style="display: none;">
+                <img src="Objects/Shadow/sMelon.png" style="width: 35px;">
+            </div> 
+
+            <div id="cookedChickIcon" style="display: none;">
+                <img src="Objects/Shadow/sChicken.png" style="width: 40px;">
+            </div> 
+
+            <div id="cookieIcon" style="display: none;">
+                <img src="Objects/Shadow/sCookie.png" style="width: 40px;">
+            </div> 
+
+            <div id="enderIcon" style="display: none;">
+                <img src="Objects/Shadow/sEndPearl.png" style="width: 35px;">
+            </div> 
+
+            <div id="featherIcon" style="display: none;">
+                <img src="Objects/Shadow/sFeather.png" style="width: 30px;">
+            </div> 
+
+            <div id="ghastIcon" style="display: none;">
+                <img src="Objects/Loots/Ghast.png" style="width: 70px;">
+            </div> 
+
+            <div id="steakIcon" style="display: none;">
+                <img src="Objects/Shadow/sSteak.png" style="width: 30px;">
+            </div> 
+
+            <div id="sandStoneIcon" style="display: none;">
+                <img src="Objects/Shadow/sRedSand.png" style="width: 40px;">
+            </div> 
+
+            <div id="pieIcon" style="display: none;">
+                <img src="Objects/Shadow/sPie.png" style="width: 40px;">
+            </div> 
+
+            <div id="pufferItemIcon" style="display: none;">
+                <img src="Objects/Shadow/sPufferLoot.png" style="width: 35px;">
+            </div> 
+
+             <div id="pufferIcon" style="display: none;">
+                <img src="Objects/Shadow/sPuffer.png" style="width: 35px;">
+            </div> 
+
+             <div id="ocelotIcon" style="display: none;">
+                <img src="Objects/Shadow/sOcelot.png" style="width: 65px;">
+            </div> 
+
+             <div id="goldIcon" style="display: none;">
+                <img src="Objects/Shadow/sGoldIngot.png" style="width: 35px;">
+            </div> 
+
+             <div id="grassIcon" style="display: none;">
+                <img src="Objects/Shadow/sGrassBlock.png" style="width: 40px;">
+            </div> 
+
+            <div id="sSlimeIcon" style="display: none;">
+                <img src="Objects/Shadow/sSlime.png" style="width: 60px;">
+            </div> 
+
+        </div>
+
+        <div id="iconsBoard">
+            <div id="scrollX">
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img id="txtName" src="Objects/TXT.png" class="icon" style="margin-top: 12px;" onclick="showPage('textBox')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                               <img id="SilverSword" src="Objects/Loots/SilverSword.png" style="width: 70px; margin-left: -9px; margin-top: -8px;" onclick="iconDrag('silverSwordIcon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                               <img id="Dirts" src="Objects/Loots/Dirts.png" style="width: 35px; margin-left: 5px; margin-top: -3px ;" onclick="iconDrag('dirtsIcon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                               <img id="Torch" src="Objects/Loots/Torch.png" style="width: 45px; margin-left: -1px; margin-top: -3px ;" onclick="iconDrag('torchIcon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                               <img id="Dia2" src="Objects/Loots/Diamond2.png" style="width: 40px; margin-left: 1px; margin-top: -10px ;" onclick="iconDrag('dia2Icon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                               <img src="Objects/Loots/Apple.png" style="width: 40px; height: 45px; margin-left: 2px" onclick="iconDrag('appleIcon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/GoldApple.png" style="width: 53px; height: 52px;" onclick="iconDrag('goldAppleIcon')"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/ClownFish.webp"  style="width: 40px;  margin-left: 2px" onclick="iconDrag('clownIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Armour.png" style="width: 40px; margin-left: 2px" onclick="iconDrag('armourIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Compass.png" style="width: 35px; margin-top: 3px; margin-left: 4px" onclick="iconDrag('compassIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Emerald.png" style="width: 28px; margin-top: 3px; margin-left: 7px" onclick="iconDrag('emeraldIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/EnchantedBook.webp" style="width: 37px; margin-left: 3px; margin-top: 3px" onclick="iconDrag('enchBookIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Potion.png" style="width: 40px; margin-top: 2px; margin-left: 1px" onclick="iconDrag('potionIcon')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/PupurBlock.png" onclick="iconDrag('purIcon') "class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Sword.png" onclick="iconDrag('swordIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/TNT.webp" onclick="iconDrag('TNTIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2">
+                                <img src="Objects/Loots/Wheat.png" onclick="iconDrag('wheatIcon')" style="width: 38px; margin-top: 1px;margin-left: 1px">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                 <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Bone.webp" onclick="iconDrag('boneIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Book.webp" onclick="iconDrag('bookIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Bread.webp" onclick="iconDrag('breadIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Bricks.webp" onclick="iconDrag('brickIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Carrot.webp" onclick="iconDrag('carrotIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Chicken.webp" onclick="iconDrag('chickenIcon')" style="width: 33px; margin-top: 2px; margin-left: 4px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Wolf.png" onclick="iconDrag('wolfIcon')" style="width: 40px; margin-top: 2px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Cod.png" onclick="iconDrag('codIcon')" class="icon" style="margin-top: 6px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Watermelon.webp"  onclick="iconDrag('melonIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/CookedChicken.webp" onclick="iconDrag('cookedChickIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Cookie.webp" onclick="iconDrag('cookieIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/EnderPearlNew.webp" onclick="iconDrag('enderIcon')" style="width: 40px; margin-left: 1px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Feather.webp" onclick="iconDrag('featherIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Ghast.png" onclick="iconDrag('ghastIcon')" style="width: 35px; margin-top: 1px; margin-left: 3px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Steak.webp" onclick="iconDrag('steakIcon')" class="icon" style="margin-top: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/RedSandstone.webp" onclick="iconDrag('sandStoneIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/PumpkinPie.webp" onclick="iconDrag('pieIcon')" class="icon" style="margin-top: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/PufferfishItem.webp" onclick="iconDrag('pufferItemIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Pufferfish.webp" onclick="iconDrag('pufferIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/Ocelot.webp" onclick="iconDrag('ocelotIcon')" style="width: 40px; margin-top: 8px; margin-left: 2px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/GoldIngot.webp" onclick="iconDrag('goldIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Loots/GrassDirt.webp"  onclick="iconDrag('grassIcon')" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iconThinBorder1">
+                    <div class="iconBorder">
+                        <div id="shadowIcon">
+                            <div class="iconThinBorder2"> 
+                                <img src="Objects/Shadow/sSlime.png" onclick="iconDrag('sSlimeIcon')" style="width: 30px; margin-left: 6px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <img id="GenTXT" src="Objects/Generator.png">
+        <img id="screeshot-txt" src="Objects/SS.png">
+        
+        <script src="script.js"></script>
+    </body>
+</html>

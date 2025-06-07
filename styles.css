@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    overflow:hidden;
+    height: 100%;
+}
+
+body {
+    background-image: url("Objects/BGmain.png");
+    background-size: 1500px 1028px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#MCFtext, #GenTXT{
+  position: absolute;
+}
+#MCFtext {
+  margin-top: 10px;
+}
+#GenTXT{
+  margin-top: 600px;
+}
+#outerBorder{
+  width: 405px;
+  height: 505px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border:#000000 solid 2px;
+
+  position: absolute;
+  display: block;
+  justify-content: center;
+}
+
+#outerGray {
+  width: 400px;
+  height: 500px;
+  border-top: #D9D9D9 solid 20px;
+  border-left: #D9D9D9 solid 20px;
+  border-right: #D9D9D9 solid 20px;
+  border-bottom: #D9D9D9 solid 60px;
+
+  position: inherit;
+  justify-content: center;
+}
+
+
+#innerBorderDown{
+  position: relative;
+  width: 360px;
+  height: 80px;
+  margin-left: 20px;;
+  border: #000000 solid 2px;
+
+}
+
+#outerGrayMid {
+  position: relative;
+  margin-right: 10px;
+  margin-top: 340px;
+  border-bottom: #D9D9D9 solid 20px;
+}
+
+#shadow1 {
+  position: relative;
+  margin-top: -346px;
+  margin-left: -6px;
+  width: 364.3px;
+  height: 324px;
+  border-top: #808080 solid 4px;
+  border-left: #808080 solid 4px;
+}
+#shadow2 {
+  position: relative;
+  margin-top: 16px;
+  margin-left: -6px;
+  width: 364px;
+  height: 84px;
+  border-top: #808080 solid 4px;
+  border-left: #808080 solid 4px;
+}
+#shadow3 {
+  position: relative;
+  margin-top: -440px;
+  margin-left: -22.5px;
+  width: 401.5px;
+  height: 501px;
+  border-bottom: #808080 solid 4px;
+  border-right: #808080 solid 4px;
+}
+
+#AddInventory{
+  z-index: 20;
+  position: absolute;
+  margin-top: 432px;
+  width: 95px;
+  height: 35px;
+  cursor: pointer;
+  margin-left: 130px;
+}
+
+#AddInventory:active {
+  transform: scale(0.95);
+}
+
+#iconsBoard {
+  z-index: 20;
+  position: absolute;
+  margin-top: 454px;
+  margin-left: -2px;
+}
+#scrollX {
+  display: flex;
+  width: 355.5px;
+  height:76px;
+  padding: 7px;
+  gap: 7px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  background-color: #B5B5B5;
+}
+#scrollX > * {
+  flex-shrink: 0;
+}
+
+.iconThinBorder1 {
+  position: relative;
+  height: 63px;
+  width: 63px;
+  border:#000000 solid 2px;
+}
+
+.iconThinBorder2 {
+  position: relative;
+  height: 47px;
+  width: 47px;;
+  border:#000000 solid 2px;
+  background-color: #B5B5B5;
+}
+
+.iconBorder {
+  position: relative;
+  width: 59px;
+  height: 59px;
+  border: #D9D9D9 solid 6px;
+}
+.inner {
+  position: absolute;
+  background-color: #B5B5B5;
+}
+
+#shadowIcon {
+  position: absolute;
+  height: 49px;
+  width: 49px;
+  margin-top: -2px;
+  margin-left: -1px;
+  border-top:#808080 solid 2px;
+  border-left: #808080 solid 2px;
+}
+
+.icon{
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 40px;
+}
+
+#IMAGE_BOX{
+  position: absolute;
+  height: 322px;
+  width: 361px;
+  top: 110px;
+  border: #000000 2px solid;
+}
+#txtDB{
+  position: relative;
+  font-family: 'Pixelify Sans', sans-serif;
+  top: 145px;
+  color:#808080
+}
+#dropBox{
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: 320px;
+  width: 360px;
+  background-color: #B5B5B5;
+  text-align: center;
+  overflow: hidden;
+}
+ #dropBox.hover {
+    background-color: #808080;
+}
+
+#preview{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ input[type="file"] {
+      display: none;
+    }
+#textBox {
+  position: absolute; 
+}
+
+#text {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15px;
+  box-sizing: content-box;
+  border: none;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 16px;
+  padding: 2px;
+  text-align: center;
+  user-select: none;
+  cursor: move;
+}
+
+#widthMirror {
+  position: inherit;
+  visibility: hidden;
+  white-space: pre;
+  font-size: 16px;
+}
+
+#dirtsIcon, #appleIcon, #Add, #silverSwordIcon, #torchIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#dia2Icon, #goldAppleIcon, #clownIcon, #compassIcon, #armourIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#emeraldIcon, #enchBookIcon, #purIcon, #swordIcon, #potionIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#TNTIcon, #wheatIcon, #boneIcon, #bookIcon, #breadIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#brickIcon, #carrotIcon, #chickenIcon, #wolfIcon, #codIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#melonIcon, #cookedChickIcon, #cookieIcon, #enderIcon, #featherIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#ghastIcon, #steakIcon, #sandStoneIcon, #pieIcon, #pufferItemIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#pufferIcon, #ocelotIcon, #grassIcon, #sSlimeIcon, #goldIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#screeshot-txt {
+  position: absolute;
+  margin-top: 700px;
+  width: 300px;
+}
