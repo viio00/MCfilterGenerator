@@ -248,7 +248,12 @@ body {
   position: inherit;
   visibility: hidden;
   white-space: pre;
+  padding: 2px;
+  height: 0;
   font-size: 16px;
+  font-family: 'Pixelify Sans', sans-serif;
+  box-sizing: content-box;
+  border: none;
 }
 
 #dirtsIcon, #appleIcon, #Add, #silverSwordIcon, #torchIcon {

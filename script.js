@@ -42,16 +42,13 @@ function showPreview(file) { //accepts file
     reader.readAsDataURL(file); //This tells the FileReader to read the file as a Data URL.
 }
 
+//mirror -- used in order to measure width of the text input (then add padding)
 const textInput = document.getElementById('text');
 const mirror = document.getElementById('widthMirror');
 
 textInput.addEventListener('input', () => {
-  const safeVal = textInput.value.replace(/\n/g, ' ').replace(/>/g, '&gt;').replace(/>/g, '&gt;');
-  //I have no idea what this means gpt just gave it to me.
-  //its ass but it kinda works so :P
-
-  mirror.textContent = safeVal || textInput.placeholder;
-  textInput.style.width = mirror.offsetWidth + 30 +'px';
+  mirror.textContent = textInput.value || textInput.placeholder;
+  textInput.style.width = mirror.offsetWidth + 20 +'px';
 });
 
 const textBox = document.getElementById('textBox');
