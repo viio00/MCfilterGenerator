@@ -269,7 +269,7 @@ body {
   cursor: move;
 }
 
-#TNTIcon, #wheatIcon, #boneIcon, #bookIcon, #breadIcon {
+#TNTIcon, #slimeIcon, #wheatIcon, #boneIcon, #bookIcon, #breadIcon {
   position: absolute;
   user-select: none;
   cursor: move;
@@ -298,6 +298,49 @@ body {
   user-select: none;
   cursor: move;
 }
+
+#appleShadowIcon, #goldAppleShadowIcon, #clownShadowIcon, #armourShadowIcon, #compassShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#emeraldShadowIcon, #enchBookShadowIcon, #purShadowIcon, #swordShadowIcon, #potionShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#TNTShadowIcon, #wheatShadowIcon, #boneShadowIcon, #bookShadowIcon, #breadShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#brickShadowIcon, #carrotShadowIcon, #chickenShadowIcon, #wolfShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#melonShadowIcon, #cookedChickShadowIcon, #cookieShadowIcon, #enderShadowIcon, #featherShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#steakShadowIcon, #sandStoneShadowIcon, #pieShadowIcon, #pufferItemShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
+#pufferShadowIcon, #ocelotShadowIcon, #grassShadowIcon, #slimeShadowIcon, #goldShadowIcon {
+  position: absolute;
+  user-select: none;
+  cursor: move;
+}
+
 
 #screeshot-txt {
   position: absolute;
